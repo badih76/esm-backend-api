@@ -1,0 +1,7 @@
+RewriteEngine On
+Options FollowSymLinks
+
+RewriteBase /esm-backend-api/
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule . index.php [L]
